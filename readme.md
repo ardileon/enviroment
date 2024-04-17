@@ -81,7 +81,13 @@ spring.profiles.active=@activatedProperties@
 
 ```python
 ### Pengertian
-Pertama kita membuat 2 profile yaitu satu sebagai prod dan satunya lagi menjadi dev dengan cara memisahkannya dnegan <profile></profile> dan untuk mengetahuinya menggunakan <id></id> pada <activatedProperties>...</activatedProperties> itu ditunjukan kalau kita akan mengaktifkan properties prod atau dev. <activation> <activeByDefault>true</activeByDefault></activation> by default maka dia kan menjalkan nya secara otomatis apabila di application.propertiesnya tidak menselect antara dev atau prod
+Pertama kita membuat 2 profile yaitu satu sebagai prod dan satunya lagi menjadi dev dengan cara memisahkannya dengan <profile></profile> 
+
+Selanjutnya untuk mengetahuinya menggunakan <id></id>
+
+pada <activatedProperties>...</activatedProperties> itu ditunjukan kalau kita akan mengaktifkan properties prod atau dev. 
+
+<activation> <activeByDefault>true</activeByDefault></activation> by default maka dia kan menjalankan nya secara otomatis apabila di application.propertiesnya tidak menselect antara dev atau prod
 
 ```
 ### Langkah selanjutnya  
