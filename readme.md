@@ -119,7 +119,7 @@ maka ketikan di terimnal mvn spring-boot:run untuk mengetahui dimanakah port yan
 ```bash
 mvn clean install -P prod 
 ```
-Untuk membuat env ke arah prod karena default mengarah ke dev jadi untuk mengatasinya kita menggunakan mvn clean install -Pprod dan -Pprod adalah untuk supaya profilenya akan diarahkan ke prod bukan lagi ke env dev.
+Untuk membuat env ke arah prod karena default mengarah ke dev jadi untuk mengatasinya kita menggunakan mvn clean install -P prod dan -P prod adalah untuk supaya profilenya akan diarahkan ke prod bukan lagi ke env dev.
 
 ### Setelah itu lakukan pengetestan lagi
 ```bash
