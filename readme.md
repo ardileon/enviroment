@@ -128,6 +128,6 @@ cd target
 java -jar enviroment-0.0.1-SNAPSHOT.jar
 
 ```
-Jika port yang berjalan adalah 9090 makan aplikasi sudah berjalan di env prod.
+Jika port yang berjalan adalah 9090 maka aplikasi sudah berjalan di env prod.
 
 ### Dan sekian terimkasih
