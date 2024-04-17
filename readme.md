@@ -113,3 +113,21 @@ mvn spring-boot:run
 ```
 maka ketikan di terimnal mvn spring-boot:run untuk mengetahui dimanakah port yang berjalan dan secara default adalah 8080 yaitu dev karena di applciation.properties belum mengselect antara dev atau prod.
 
+## Langkah ke 4 Env Prod
+
+### Buat jar untuk env prod
+```bash
+mvn clean install -P prod 
+```
+Untuk membuat env ke arah prod karena default mengarah ke dev jadi untuk mengatasinya kita menggunakan mvn clean install -Pprod dan -Pprod adalah untuk supaya profilenya akan diarahkan ke prod bukan lagi ke env dev.
+
+### Setelah itu lakukan pengetestan lagi
+```bash
+cd target
+
+java -jar enviroment-0.0.1-SNAPSHOT.jar
+
+```
+Jika port yang berjalan adalah 9090 makan aplikasi sudah berjalan di env prod.
+
+### Dan sekian terimkasih
