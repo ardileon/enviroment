@@ -79,16 +79,37 @@ spring.profiles.active=@activatedProperties@
 
 ```
 
-```python
+
 ### Pengertian
-Pertama kita membuat 2 profile yaitu satu sebagai prod dan satunya lagi menjadi dev dengan cara memisahkannya dengan <profile></profile> 
-
-Selanjutnya untuk mengetahuinya menggunakan <id></id>
-
-pada <activatedProperties>...</activatedProperties> itu ditunjukan kalau kita akan mengaktifkan properties prod atau dev. 
-
-<activation> <activeByDefault>true</activeByDefault></activation> by default maka dia kan menjalankan nya secara otomatis apabila di application.propertiesnya tidak menselect antara dev atau prod
-
+```bash
+<profile></profile> 
 ```
+Pada code diatas menunjukkan kita membuat 2 profile yaitu satu sebagai prod dan satunya lagi menjadi dev dengan cara memisahkannya dengan 
+
+```bash
+<id></id>
+```
+Selanjutnya Pada code diatas menunjukkan untuk mengetahuinya menggunakan profile apa
+
+```bash
+<activatedProperties>...</activatedProperties>
+```
+pada code diatas itu ditunjukkan kalau kita akan mengaktifkan properties prod atau dev. 
+
+```bash
+<activation> <activeByDefault>true</activeByDefault></activation>
+```
+Pada code diatas menunjukan by default maka dia kan menjalankan nya secara otomatis apabila di application.propertiesnya tidak menselect antara dev atau prod
+
+
 ### Langkah selanjutnya  
-Pada terminal di vscode ketikan mvn clean install 
+```bash
+mvn clean install
+```
+Pada terminal di vscode ketikan mvn clean install . setelah code di build dalam bentuk jar (di folder target sebagai: enviroment-0.0.1-SNAPSHOT.jar)
+
+```bash
+mvn spring-boot:run
+```
+maka ketikan di terimnal mvn spring-boot:run untuk mengetahui dimanakah port yang berjalan dan secara default adalah 8080 yaitu dev karena di applciation.properties belum mengselect antara dev atau prod.
+
