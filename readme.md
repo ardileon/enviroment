@@ -78,8 +78,11 @@ spring.profiles.active=@activatedProperties@
 	</profiles>
 
 ```
+
+```python
 ### Pengertian
 Pertama kita membuat 2 profile yaitu satu sebagai prod dan satunya lagi menjadi dev dengan cara memisahkannya dnegan <profile></profile> dan untuk mengetahuinya menggunakan <id></id> pada <activatedProperties>...</activatedProperties> itu ditunjukan kalau kita akan mengaktifkan properties prod atau dev. <activation> <activeByDefault>true</activeByDefault></activation> by default maka dia kan menjalkan nya secara otomatis apabila di application.propertiesnya tidak menselect antara dev atau prod
 
+```
 ### Langkah selanjutnya  
 Pada terminal di vscode ketikan mvn clean install 
